@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | DevNotes</title>
+  <meta name="description" content="Get in touch with Alina Mahnoor, author of DevNotes.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- One shared stylesheet for ALL pages -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER (identical on every page) ========== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">DevNotes<span>.</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="blog.html" class="nav__link">Blog</a></li>
+          <li><a href="contact.html" class="nav__link active" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <h1 class="page-intro__title">Contact</h1>
+        <p class="page-intro__text">Questions, feedback or a topic you'd like me to cover? Say hello.</p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact">
+      <div class="container contact__grid">
+
+        <!-- Contact details -->
+        <div class="contact__details">
+          <h2 class="contact__heading">Contact details</h2>
+          <p class="contact__note">I usually reply within two days.</p>
+
+          <ul class="contact__list">
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:alinamahnoor59@gmail.com">alinamahnoor59@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-github"></i>
+              <a href="https://github.com/alinamahnoor" target="_blank" rel="noopener">GitHub</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/alina-mahnoor-2a66a93ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/alina_.mahnoor?obrf=MWd1czZ0YW92N2Zueg==" target="_blank" rel="noopener">Instagram</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact__form" action="#" method="post">
+          <div class="form__group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER (identical on every page) ========== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 DevNotes by Alina Mahnoor. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/alinamahnoor" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alina-mahnoor-2a66a93ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/alina_.mahnoor?obrf=MWd1czZ0YW92N2Zueg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

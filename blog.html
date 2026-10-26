@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | DevNotes</title>
+  <meta name="description" content="Read the latest DevNotes posts on HTML, CSS and JavaScript.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- One shared stylesheet for ALL pages -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER (identical on every page) ========== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">DevNotes<span>.</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="blog.html" class="nav__link active" aria-current="page">Blog</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <div class="container">
+        <h1 class="page-intro__title">The Blog</h1>
+        <p class="page-intro__text">Short, practical posts on web development.</p>
+      </div>
+    </section>
+
+    <!-- ========== BLOG POSTS ========== -->
+    <section class="posts">
+      <div class="container posts__grid">
+
+        <article class="post-card">
+          <img src="images/post1.jpg" alt="People at a train station at sunset" class="post-card__img" loading="lazy">
+          <div class="post-card__body">
+            <p class="post-card__date"><i class="fa-regular fa-calendar"></i> 20 October 2026</p>
+            <h2 class="post-card__title">Flexbox vs Grid: which one should you use?</h2>
+            <p class="post-card__text">Both are powerful, but they solve different problems. Here is a simple rule of thumb to pick the right one for your layout.</p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <img src="images/post2.jpg" alt="Desk with a computer, keyboard and sheet music" class="post-card__img" loading="lazy">
+          <div class="post-card__body">
+            <p class="post-card__date"><i class="fa-regular fa-calendar"></i> 14 October 2026</p>
+            <h2 class="post-card__title">5 CSS habits that make your code cleaner</h2>
+            <p class="post-card__text">Small habits like naming classes clearly and using variables can save you hours of confusion when your stylesheet grows.</p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <img src="images/post3.jpg" alt="Website being published online" class="post-card__img" loading="lazy">
+          <div class="post-card__body">
+            <p class="post-card__date"><i class="fa-regular fa-calendar"></i> 7 October 2026</p>
+            <h2 class="post-card__title">How I deployed my first site with GitHub Pages</h2>
+            <p class="post-card__text">A beginner-friendly walkthrough of pushing code to GitHub and turning it into a live website in just a few minutes.</p>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <img src="images/post4.jpg" alt="Terminal window with Git commands" class="post-card__img" loading="lazy">
+          <div class="post-card__body">
+            <p class="post-card__date"><i class="fa-regular fa-calendar"></i> 1 October 2026</p>
+            <h2 class="post-card__title">Git commands every beginner needs</h2>
+            <p class="post-card__text">You only need a handful of commands to get started with version control. These are the ones I use almost every day.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER (identical on every page) ========== -->
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 DevNotes by Alina Mahnoor. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://github.com/alinamahnoor" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/alina-mahnoor-2a66a93ab?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="Linkedin"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/alina_.mahnoor?obrf=MWd1czZ0YW92N2Zueg==" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
